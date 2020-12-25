@@ -1,0 +1,385 @@
+/* основной цвет текста #757575 */
+/* цвет заголовка #212121 */
+/* цвет акцента #2196F3 */
+/* основной цвет фона #FFFFFF */
+/* дополнительный цвет фона #F5F4FA */
+/* цвет фона в футере и герое #2F303A */
+/* цвет текста в футере rgba(255, 255, 255, 0.6) */
+
+:root {
+  --primery-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --primery-white-color: #ffffff;
+}
+
+body {
+  color: var(--primery-text-color);
+  background-color: var(--primery-white-color);
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  /* background-color: aqua; */
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+/* главная навигация */
+
+.header > .container {
+  display: flex;
+  align-items: center;
+}
+
+.nav-page {
+  display: flex;
+  align-items: center;
+}
+
+.site-nav {
+  display: flex;
+}
+
+.site-nav > .item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.logo {
+  display: flex;
+  margin-right: 93px;
+
+  color: var(--title-text-color);
+  font-family: Raleway, sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+}
+.logo-web {
+  color: var(--accent-color);
+}
+
+.site-nav .link {
+  display: block;
+  padding: 32px 0;
+
+  color: var(--title-text-color);
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+.list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+}
+.contacts {
+  display: flex;
+  align-items: center;
+  display: block;
+  padding: 32px 0;
+  margin-left: auto;
+
+  color: var(--primery-text-color);
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+.contacts + .contacts {
+  margin-left: 50px;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+.contacts:hover,
+.contacts:focus {
+  color: var(--accent-color);
+}
+
+header {
+  border-bottom: 1px solid #ececec;
+}
+
+/* ГЕРОЙ */
+
+.hero {
+  background-color: #2f303a;
+  color: var(--primery-white-color);
+  text-align: center;
+}
+.hero-text {
+  margin-top: 0;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.hero-button {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 32px;
+  border-radius: 4px;
+
+  background-color: var(--accent-color);
+  color: var(--primery-white-color);
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.88;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+/* компетенции */
+
+.competence .list {
+  display: flex;
+}
+
+.competence {
+  padding: 94px 0;
+}
+
+.competence .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.competence-title {
+  display: flex;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 93px 0;
+  color: transparent;
+}
+.competence .title {
+  display: flex;
+  margin-bottom: 10px;
+  color: var(--title-text-color);
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+/* чем мы занимаемся */
+.example .list {
+  display: flex;
+}
+
+.example {
+  padding-bottom: 94px;
+}
+
+.example .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.example-title {
+  margin-bottom: 50px;
+
+  color: var(--title-text-color);
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+
+/* команда */
+
+.teams .list {
+  display: flex;
+}
+
+.teams {
+  background-color: #f5f4fa;
+  padding: 94px 0;
+}
+
+.teams .teams-member:not(:last-child) {
+  margin-right: 30px;
+}
+
+.teams-title {
+  margin: 0 0 50px;
+  color: var(--title-text-color);
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+.teams-member {
+  background-color: var(--primery-white-color);
+  font-size: 16px;
+  line-height: 1.9;
+  text-align: center;
+}
+
+.team-text {
+  margin: 0 0 30px;
+}
+
+.teams .title {
+  margin: 30px auto 10px;
+  color: var(--title-text-color);
+  font-weight: 500;
+}
+
+/* подвал */
+.footer {
+  background-color: #2f303a;
+  padding: 60px 0;
+}
+.footer .logo {
+  display: block;
+  margin: 0 0 20px;
+  color: var(--primery-white-color);
+}
+.footer-address {
+  margin: 0 0 9px;
+  color: var(--primery-white-color);
+  font-style: normal;
+}
+.footer-link {
+  display: block;
+  margin: 0 0 9px;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+}
+.footer-link:last-child {
+  margin: 0;
+}
+
+/* страница портфолио */
+.project {
+  background-color: var(--primery-white-color);
+  padding: 94px 0;
+}
+
+.buttom .filter-buttom:not(:last-child) {
+  margin-right: 8px;
+}
+
+.filter-buttom {
+  margin-right: 8px;
+  padding: 6px 22px;
+  color: var(--title-text-color);
+  background-color: #f5f4fa;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: center;
+  letter-spacing: 0.03em;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.filter-buttom:active,
+.filter-buttom:hover,
+.filter-buttom:focus {
+  color: var(--primery-white-color);
+  background-color: var(--accent-color);
+}
+
+.buttom {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.jobs {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.jobs img {
+  display: block;
+}
+
+.jobs > .item {
+  width: calc ((100%-60px)/3);
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.jobs > .item.item:nth-child(3n) {
+  margin-right: 0;
+}
+.jobs > .item.item:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+}
+
+.project-title {
+  margin: 0 0 4px;
+  color: var(--title-text-color);
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.project-name {
+  margin: 0;
+  color: var(--primery-text-color);
+  font-size: 16px;
+  line-height: 1.88;
+}
+
+.job-name {
+  padding: 20px 24px;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+}
