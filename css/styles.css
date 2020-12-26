@@ -178,7 +178,7 @@ header {
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(/images/img/Img-hero.jpg);
+    url(./images/img/Img-hero.jpg);
   background-color: #2f303a;
   background-size: cover;
   background-repeat: no-repeat;
