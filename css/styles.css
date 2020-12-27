@@ -361,12 +361,12 @@ header {
   height: 100%;
 
   border-radius: 50%;
-  color: var(--primary-fill-color);
+  color: #afb1b8;
 }
 
 .icon-link:hover,
 .icon-link:focus {
-  color: var(--primary-white-color);
+  color: var(--primery-white-color);
   background-color: var(--accent-color);
 }
 
